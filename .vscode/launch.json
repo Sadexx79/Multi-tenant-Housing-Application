@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run JavaFX App",
+      "request": "launch",
+      "mainClass": "app.App",
+      "cwd": "${workspaceFolder}",
+      "classPaths": [
+        "${workspaceFolder}/bin",
+        "${workspaceFolder}/src"
+      ],
+      "vmArgs": "--module-path \"C:/javafx/lib\" --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}
