@@ -8,6 +8,10 @@ public class TenantController {
 
     private ObservableList<Tenant> tenants = FXCollections.observableArrayList();
 
+    public TenantController() {
+        
+    }
+
     public ObservableList<Tenant> getTenants() {
         return tenants;
     }
@@ -18,6 +22,10 @@ public class TenantController {
 
     public void removeTenant(Tenant tenant) {
         tenants.remove(tenant);
+    }
+
+    public void clearAllTenants() {
+        tenants.clear();
     }
 
     public void updateTenant(Tenant tenant, String name, double rent, double utilities, int leaseMonths) {
